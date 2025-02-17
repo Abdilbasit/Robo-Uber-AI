@@ -1,21 +1,13 @@
 # Robo-Uber-AI
 
-## Overview
-
-**Robo-Uber-AI** is an AI-powered simulation that models an autonomous ride-hailing system inspired by modern on-demand transportation services. The project leverages advanced artificial intelligence and machine learning techniques to simulate self-driving vehicle behavior, dynamic routing, and efficient dispatching. It serves as both a research testbed and a demonstration of how future transportation systems might operate autonomously.
+Robo-Uber-AI is a simulation project that emulates an autonomous ride-hailing system inspired by modern on-demand transportation services. This project creates a grid-based virtual world in which taxi agents, a centralized dispatcher, and dynamic fare requests interact in real time. It serves as a testbed for exploring concepts in autonomous navigation, dynamic routing, fare allocation, and traffic management.
 
 ## Features
 
-- **Autonomous Navigation:** Simulates self-driving car behavior with AI algorithms for route planning and obstacle avoidance.
-- **Dynamic Dispatching:** Models ride-hailing operations by matching passenger requests with available vehicles in real-time.
-- **Optimized Routing:** Implements dynamic routing strategies to minimize wait times and improve overall system efficiency.
-- **Modular Architecture:** Designed with a modular structure to facilitate easy extension and integration of new features or AI modules.
-- **Visualization:** Offers a visual interface (or detailed logging) to observe vehicle movements, pickup and drop-off events, and system performance.
-
-## Technologies Used
-
-- **Python:** The primary language used for simulation logic and AI model implementation.
-- **Machine Learning Libraries:** Utilizes libraries such as TensorFlow, PyTorch, or Scikit-Learn (adjust based on actual usage).
-- **Simulation & Visualization Tools:** Incorporates frameworks for simulation and data visualization to display real-time system dynamics.
-- **Additional Libraries:** Other Python packages for routing, data processing, and system monitoring.
+- **Grid-Based Virtual World:** A simulation environment constructed from interconnected nodes (junctions) and edges (streets) representing a city grid.
+- **Dynamic Fare Generation:** Fares (ride requests) are generated probabilistically at various nodes, simulating real-world demand patterns.
+- **Autonomous Taxis:** Taxi agents come on duty, bid for fares, navigate through the network, pick up passengers, and drop them off at their destinations.
+- **Centralized Dispatcher:** A dispatcher manages fare allocation by receiving bids from taxis and assigning fares based on availability and cost.
+- **Traffic Simulation:** The simulation incorporates traffic conditions at nodes, affecting taxi movement and fare pick-up timings.
+- **Visualization:** Uses Pygame for real-time visualization of the simulation along with Matplotlib for output analysis.
 
